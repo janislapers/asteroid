@@ -1,0 +1,15 @@
+[nasa]
+api_key = R97b9iRsrPubJqgq1v997cniCJ7dA4ZAB8lWRiMc
+api_url = https://api.nasa.gov/neo/
+
+[mysql_config]
+mysql_host = 127.0.0.1
+mysql_db = asteroids
+mysql_user = asteroids_user
+mysql_pass = mysuperpass
+
+[twitter]
+consumer_key = asd
+consumer_secret = asd
+access_token = asd
+access_token_secret = asd

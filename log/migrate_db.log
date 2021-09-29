@@ -1,0 +1,20 @@
+2021-09-29 07:11:16,288 - INFO - migrate_db : Asteroid DB migration service
+2021-09-29 07:11:16,288 - INFO - migrate_db : Loading configuration from file
+2021-09-29 07:11:16,289 - INFO - migrate_db : DONE
+2021-09-29 07:12:45,658 - INFO - migrate_db : Asteroid DB migration service
+2021-09-29 07:12:45,658 - INFO - migrate_db : Loading configuration from file
+2021-09-29 07:12:45,659 - INFO - migrate_db : DONE
+2021-09-29 07:12:45,663 - INFO - migrate_db : Connecting to MySQL DB
+2021-09-29 07:12:45,664 - INFO - migrate_db : Connected to MySQL database. MySQL Server version on 5.5.5-10.3.31-MariaDB-0ubuntu0.20.04.1
+2021-09-29 07:12:45,682 - INFO - migrate_db : Executing: 20210924203000-initial-db-struct.sql
+2021-09-29 07:12:45,691 - INFO - migrate_db : None
+2021-09-29 07:12:45,695 - INFO - migrate_db : OK
+2021-09-29 07:12:45,697 - INFO - migrate_db : Executing: 20210925134800-add-date-to-ast-table.sql
+2021-09-29 07:12:45,701 - INFO - migrate_db : None
+2021-09-29 07:12:45,704 - INFO - migrate_db : OK
+2021-09-29 07:12:45,708 - INFO - migrate_db : Executing: 20210925135800-add-ast-id-to-ast-table.sql
+2021-09-29 07:12:45,712 - INFO - migrate_db : None
+2021-09-29 07:12:45,715 - INFO - migrate_db : OK
+2021-09-29 07:12:45,718 - INFO - migrate_db : Executing: 20210925135800-add-hazard-to-ast-table.sql
+2021-09-29 07:12:45,722 - INFO - migrate_db : None
+2021-09-29 07:12:45,725 - INFO - migrate_db : OK

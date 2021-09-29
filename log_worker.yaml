@@ -1,0 +1,27 @@
+version: 1
+formatters:
+  simple:
+    format: '%(asctime)s - %(levelname)s - %(message)s'
+  complex:
+    format: '%(asctime)s - %(levelname)s - %(module)s : %(message)s'
+
+handlers:
+  file:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: DEBUG
+    formatter: complex
+    filename: log/worker.log
+    when: 'midnight'
+    encoding: 'utf-8'
+    delay: False
+    backupCount: 60
+    interval: 1
+  screen:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: simple
+    stream: ext://sys.stdout
+
+root:
+  level: DEBUG
+  handlers: [file, screen]
