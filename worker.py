@@ -9,7 +9,7 @@ import yaml
 from datetime import datetime
 from configparser import ConfigParser
 
-# Loading logging configuration
+# Loading logging configuration otra programmas versija
 with open('./log_worker.yaml', 'r') as stream:
     config = yaml.safe_load(stream)
 

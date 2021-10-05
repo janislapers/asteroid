@@ -1,0 +1,6 @@
+config.ini
+
+asteroids/log_worker.yaml
+asteroids/config.ini
+asteroids/log_migrate_db.yaml
+asteroids/log/*.log
