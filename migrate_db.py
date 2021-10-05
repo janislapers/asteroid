@@ -10,7 +10,7 @@ from datetime import datetime
 from configparser import ConfigParser
 from mysql.connector import Error
 
-# Loading logging configuration
+# Loading logging configuration automatiskas db migracijas
 with open('./log_migrate_db.yaml', 'r') as stream:
     config = yaml.safe_load(stream)
 
