@@ -6,8 +6,8 @@ import yaml
 
 from datetime import datetime
 print('Asteroid processing service')
-
-# Initiating and reading config values
+# first and most easy programm
+# Initiating and reading config values 
 print('Loading configuration from file')
 
 nasa_api_key = "9jb1f3swSUOUJgFKrAUoYwYgy0HpbMVt3va8z1Ta"
