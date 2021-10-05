@@ -13,7 +13,7 @@ print('Loading configuration from file')
 nasa_api_key = "9jb1f3swSUOUJgFKrAUoYwYgy0HpbMVt3va8z1Ta"
 nasa_api_url = "https://api.nasa.gov/neo/"
 
-# Getting todays date
+# Getting todays date hotfix izmainas
 dt = datetime.now()
 request_date = str(dt.year) + "-" + str(dt.month).zfill(2) + "-" + str(dt.day).zfill(2)  
 print("Generated today's date: " + str(request_date))
