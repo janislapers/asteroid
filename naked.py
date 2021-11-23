@@ -5,14 +5,26 @@ import time
 import yaml
 
 from datetime import datetime
+from configparser import ConfigParser
+
 print('Asteroid processing service')
 # first and most easy programm
 # Initiating and reading config values 
 print('Loading configuration from file')
 
-#api ar kuru kods sazinas lai iegutu info
-nasa_api_key = "9jb1f3swSUOUJgFKrAUoYwYgy0HpbMVt3va8z1Ta"
-nasa_api_url = "https://api.nasa.gov/neo/"
+#ieliekam api atslegu
+try:
+	config = ConfigParser()
+	config.read('config.ini')
+
+	nasa_api_key = config.get('nasa', 'api_key')
+	nasa_api_url = config.get('nasa', 'api_url')
+
+except:
+	logger.exception('')
+print ('DONE')
+
+
 
 # Getting todays date hotfix izmainas
 dt = datetime.now()
@@ -101,14 +113,11 @@ if r.status_code == 200:
 
 	print("Hazardous asteorids: " + str(len(ast_hazardous)) + " | Safe asteroids: " + str(len(ast_safe)))
 
-	
 	if len(ast_hazardous) > 0:
-	
+
 		ast_hazardous.sort(key = lambda x: x[4], reverse=False)
 
-	# izdruka cik reizes asteroidiem iespejama saskarsme ar zemi
-
-	print("Today's possible apocalypse (asteroid impact on earth) times:")
+		print("Today's possible apocalypse (asteroid impact on earth) times:")
 		for asteroid in ast_hazardous:
 			print(str(asteroid[6]) + " " + str(asteroid[0]) + " " + " | more info: " + str(asteroid[1]))
 
@@ -116,7 +125,6 @@ if r.status_code == 200:
 		print("Closest passing distance is for: " + str(ast_hazardous[0][0]) + " at: " + str(int(ast_hazardous[0][8])) + " km | more info: " + str(ast_hazardous[0][1]))
 	else:
 		print("No asteroids close passing earth today")
-# ja api kaada iemesla deelj nedarbojas izdruka sho		
 
 else:
 	print("Unable to get response from API. Response code: " + str(r.status_code) + " | content: " + str(r.text))
