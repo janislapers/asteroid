@@ -101,6 +101,7 @@ if __name__ == "__main__":
 	connection = None
 	connected = False
 
+init_db()
 
 # Getting todays date hotfix izmainas
 dt = datetime.now()
