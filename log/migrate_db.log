@@ -36,3 +36,29 @@
 2021-11-23 22:05:35,982 - INFO - migrate_db : Asteroid DB migration service
 2021-11-23 22:05:35,982 - INFO - migrate_db : Loading configuration from file
 2021-11-23 22:05:35,982 - INFO - migrate_db : DONE
+2021-11-23 22:11:37,894 - INFO - migrate_db : Asteroid DB migration service
+2021-11-23 22:11:37,894 - INFO - migrate_db : Loading configuration from file
+2021-11-23 22:11:37,895 - INFO - migrate_db : DONE
+2021-11-23 22:14:04,607 - INFO - migrate_db : Asteroid DB migration service
+2021-11-23 22:14:04,607 - INFO - migrate_db : Loading configuration from file
+2021-11-23 22:14:04,607 - INFO - migrate_db : DONE
+2021-11-23 22:14:46,178 - INFO - migrate_db : Asteroid DB migration service
+2021-11-23 22:14:46,179 - INFO - migrate_db : Loading configuration from file
+2021-11-23 22:14:46,179 - INFO - migrate_db : DONE
+2021-11-23 22:18:35,779 - INFO - migrate_db : Asteroid DB migration service
+2021-11-23 22:18:35,779 - INFO - migrate_db : Loading configuration from file
+2021-11-23 22:18:35,780 - INFO - migrate_db : DONE
+2021-11-23 22:19:32,759 - INFO - migrate_db : Asteroid DB migration service
+2021-11-23 22:19:32,760 - INFO - migrate_db : Loading configuration from file
+2021-11-23 22:19:32,760 - INFO - migrate_db : DONE
+2021-11-23 22:19:32,764 - INFO - migrate_db : Connecting to MySQL DB
+2021-11-23 22:19:32,765 - INFO - migrate_db : Connected to MySQL database. MySQL Server version on 5.5.5-10.3.31-MariaDB-0ubuntu0.20.04.1
+2021-11-23 22:19:32,767 - INFO - migrate_db : Migrations table exists
+2021-11-23 22:19:32,771 - INFO - migrate_db : No migrations to execute
+2021-11-23 22:19:40,875 - INFO - migrate_db : Asteroid DB migration service
+2021-11-23 22:19:40,875 - INFO - migrate_db : Loading configuration from file
+2021-11-23 22:19:40,876 - INFO - migrate_db : DONE
+2021-11-23 22:19:40,881 - INFO - migrate_db : Connecting to MySQL DB
+2021-11-23 22:19:40,882 - INFO - migrate_db : Connected to MySQL database. MySQL Server version on 5.5.5-10.3.31-MariaDB-0ubuntu0.20.04.1
+2021-11-23 22:19:40,884 - INFO - migrate_db : Migrations table exists
+2021-11-23 22:19:40,889 - INFO - migrate_db : No migrations to execute
