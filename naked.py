@@ -10,7 +10,7 @@ print('Asteroid processing service')
 # Initiating and reading config values 
 print('Loading configuration from file')
 
-nasa_api_key = "SUOUJgFKrAUoYwYgy0HpbMVt3va8z1"
+nasa_api_key = "8SE2eD8XFqAsO9O9TkwpN1qgReKdg3oa2K8TqU3c"
 nasa_api_url = "https://api.nasa.gov/neo/"
 
 # Getting todays date hotfix izmainas
