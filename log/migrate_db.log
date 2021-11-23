@@ -62,3 +62,38 @@
 2021-11-23 22:19:40,882 - INFO - migrate_db : Connected to MySQL database. MySQL Server version on 5.5.5-10.3.31-MariaDB-0ubuntu0.20.04.1
 2021-11-23 22:19:40,884 - INFO - migrate_db : Migrations table exists
 2021-11-23 22:19:40,889 - INFO - migrate_db : No migrations to execute
+2021-11-23 22:22:10,948 - INFO - migrate_db : Asteroid DB migration service
+2021-11-23 22:22:10,948 - INFO - migrate_db : Loading configuration from file
+2021-11-23 22:22:10,949 - INFO - migrate_db : DONE
+2021-11-23 22:22:10,952 - INFO - migrate_db : Connecting to MySQL DB
+2021-11-23 22:22:10,953 - INFO - migrate_db : Connected to MySQL database. MySQL Server version on 5.5.5-10.3.31-MariaDB-0ubuntu0.20.04.1
+2021-11-23 22:22:10,955 - INFO - migrate_db : Migrations table exists
+2021-11-23 22:22:10,960 - INFO - migrate_db : No migrations to execute
+2021-11-23 22:23:46,040 - INFO - migrate_db : Asteroid DB migration service
+2021-11-23 22:23:46,040 - INFO - migrate_db : Loading configuration from file
+2021-11-23 22:23:46,040 - INFO - migrate_db : DONE
+2021-11-23 22:23:46,043 - INFO - migrate_db : Connecting to MySQL DB
+2021-11-23 22:23:46,044 - INFO - migrate_db : Connected to MySQL database. MySQL Server version on 5.5.5-10.3.31-MariaDB-0ubuntu0.20.04.1
+2021-11-23 22:23:46,046 - INFO - migrate_db : Migrations table exists
+2021-11-23 22:23:46,050 - INFO - migrate_db : No migrations to execute
+2021-11-23 22:45:02,975 - INFO - migrate_db : Asteroid DB migration service
+2021-11-23 22:45:02,975 - INFO - migrate_db : Loading configuration from file
+2021-11-23 22:45:02,976 - INFO - migrate_db : DONE
+2021-11-23 22:45:02,980 - INFO - migrate_db : Connecting to MySQL DB
+2021-11-23 22:45:02,980 - INFO - migrate_db : Connected to MySQL database. MySQL Server version on 5.5.5-10.3.31-MariaDB-0ubuntu0.20.04.1
+2021-11-23 22:45:02,983 - INFO - migrate_db : Migrations table exists
+2021-11-23 22:45:02,990 - INFO - migrate_db : No migrations to execute
+2021-11-23 22:52:16,886 - INFO - migrate_db : Asteroid DB migration service
+2021-11-23 22:52:16,886 - INFO - migrate_db : Loading configuration from file
+2021-11-23 22:52:16,887 - INFO - migrate_db : DONE
+2021-11-23 22:52:16,890 - INFO - migrate_db : Connecting to MySQL DB
+2021-11-23 22:52:16,890 - INFO - migrate_db : Connected to MySQL database. MySQL Server version on 5.5.5-10.3.31-MariaDB-0ubuntu0.20.04.1
+2021-11-23 22:52:16,892 - INFO - migrate_db : Migrations table exists
+2021-11-23 22:52:16,896 - INFO - migrate_db : No migrations to execute
+2021-11-23 22:54:03,523 - INFO - migrate_db : Asteroid DB migration service
+2021-11-23 22:54:03,523 - INFO - migrate_db : Loading configuration from file
+2021-11-23 22:54:03,523 - INFO - migrate_db : DONE
+2021-11-23 22:54:03,526 - INFO - migrate_db : Connecting to MySQL DB
+2021-11-23 22:54:03,527 - INFO - migrate_db : Connected to MySQL database. MySQL Server version on 5.5.5-10.3.31-MariaDB-0ubuntu0.20.04.1
+2021-11-23 22:54:03,528 - INFO - migrate_db : Migrations table exists
+2021-11-23 22:54:03,531 - INFO - migrate_db : No migrations to execute
