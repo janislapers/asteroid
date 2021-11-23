@@ -1,5 +1,5 @@
 [nasa]
-api_key = R97b9iRsrPubJqgq1v997cniCJ7dA4ZAB8lWRiMc
+api_key = 8SE2eD8XFqAsO9O9TkwpN1qgReKdg3oa2K8TqU3c
 api_url = https://api.nasa.gov/neo/
 
 [mysql_config]

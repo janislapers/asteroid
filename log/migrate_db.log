@@ -18,3 +18,15 @@
 2021-09-29 07:12:45,718 - INFO - migrate_db : Executing: 20210925135800-add-hazard-to-ast-table.sql
 2021-09-29 07:12:45,722 - INFO - migrate_db : None
 2021-09-29 07:12:45,725 - INFO - migrate_db : OK
+2021-11-23 21:50:25,633 - INFO - migrate_db : Asteroid DB migration service
+2021-11-23 21:50:25,633 - INFO - migrate_db : Loading configuration from file
+2021-11-23 21:50:25,634 - INFO - migrate_db : DONE
+2021-11-23 21:55:34,030 - INFO - migrate_db : Asteroid DB migration service
+2021-11-23 21:55:34,030 - INFO - migrate_db : Loading configuration from file
+2021-11-23 21:55:34,030 - INFO - migrate_db : DONE
+2021-11-23 21:57:19,706 - INFO - migrate_db : Asteroid DB migration service
+2021-11-23 21:57:19,706 - INFO - migrate_db : Loading configuration from file
+2021-11-23 21:57:19,707 - INFO - migrate_db : DONE
+2021-11-23 21:58:07,263 - INFO - migrate_db : Asteroid DB migration service
+2021-11-23 21:58:07,263 - INFO - migrate_db : Loading configuration from file
+2021-11-23 21:58:07,264 - INFO - migrate_db : DONE
