@@ -18,7 +18,7 @@ handlers:
     interval: 1
   screen:
     class: logging.StreamHandler
-    level: DEBUG
+    level: INFO
     formatter: simple
     stream: ext://sys.stdout
 
