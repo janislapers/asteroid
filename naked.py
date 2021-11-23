@@ -10,6 +10,7 @@ print('Asteroid processing service')
 # Initiating and reading config values 
 print('Loading configuration from file')
 
+#api ar kuru kods sazinas lai iegutu info
 nasa_api_key = "9jb1f3swSUOUJgFKrAUoYwYgy0HpbMVt3va8z1Ta"
 nasa_api_url = "https://api.nasa.gov/neo/"
 
@@ -18,7 +19,7 @@ dt = datetime.now()
 request_date = str(dt.year) + "-" + str(dt.month).zfill(2) + "-" + str(dt.day).zfill(2)  
 print("Generated today's date: " + str(request_date))
 
-
+#ieguust datus
 print("Request url: " + str(nasa_api_url + "rest/v1/feed?start_date=" + request_date + "&end_date=" + request_date + "&api_key=" + nasa_api_key))
 r = requests.get(nasa_api_url + "rest/v1/feed?start_date=" + request_date + "&end_date=" + request_date + "&api_key=" + nasa_api_key)
 
@@ -36,6 +37,7 @@ if r.status_code == 200:
 	if 'element_count' in json_data:
 		ast_count = int(json_data['element_count'])
 		print("Asteroid count today: " + str(ast_count))
+# ja ir bijis kaads asteroids tad apraksta to
 
 		if ast_count > 0:
 			for val in json_data['near_earth_objects'][request_date]:
@@ -93,6 +95,7 @@ if r.status_code == 200:
 					else:
 						ast_safe.append([tmp_ast_name, tmp_ast_nasa_jpl_url, tmp_ast_diam_min, tmp_ast_diam_max, tmp_ast_close_appr_ts, tmp_ast_close_appr_dt_utc, tmp_ast_close_appr_dt, tmp_ast_speed, tmp_ast_miss_dist])
 
+# kas notiek ja nav neviens asteroids
 		else:
 			print("No asteroids are going to hit earth today")
 
@@ -103,7 +106,7 @@ if r.status_code == 200:
 	
 		ast_hazardous.sort(key = lambda x: x[4], reverse=False)
 
-	
+	# izdruka cik reizes asteroidiem iespejama saskarsme ar zemi
 
 	print("Today's possible apocalypse (asteroid impact on earth) times:")
 		for asteroid in ast_hazardous:
@@ -113,6 +116,7 @@ if r.status_code == 200:
 		print("Closest passing distance is for: " + str(ast_hazardous[0][0]) + " at: " + str(int(ast_hazardous[0][8])) + " km | more info: " + str(ast_hazardous[0][1]))
 	else:
 		print("No asteroids close passing earth today")
-		
+# ja api kaada iemesla deelj nedarbojas izdruka sho		
+
 else:
 	print("Unable to get response from API. Response code: " + str(r.status_code) + " | content: " + str(r.text))
