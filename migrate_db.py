@@ -10,7 +10,7 @@ from datetime import datetime
 from configparser import ConfigParser
 from mysql.connector import Error
 
-# Loading logging configuration automatiskas db migracijas
+# Loading logging configuration
 with open('./log_migrate_db.yaml', 'r') as stream:
     config = yaml.safe_load(stream)
 
@@ -74,7 +74,7 @@ except Error as e :
 	logger.error('Error while connecting to MySQL' + str(e))
 
 
-# Parbauda vai tabula ekiste
+# Check if table exists
 def mysql_check_if_table_exists(table_name):
 	records = []
 	cursor = get_cursor()
@@ -89,7 +89,7 @@ def mysql_check_if_table_exists(table_name):
 		pass
 	return records
 
-# Iveido tabulu
+# Create migrations table
 def mysql_create_migrations_table():
 	cursor = get_cursor()
 	result = []
@@ -103,7 +103,7 @@ def mysql_create_migrations_table():
 		pass
 	return result
 
-# Parbauda vai tabula eksiste
+# Check if table exists
 def mysql_check_if_migration_exists(migration_f_name):
 	records = []
 	cursor = get_cursor()
@@ -134,7 +134,7 @@ def mysql_exec_any_sql(sql_query):
 		pass
 	return status
 
-# Ievieto vertibas
+# Migration value insert
 def mysql_migration_value_insert(name, exec_ts, exec_dt):
 	cursor = get_cursor()
 	try:
@@ -152,14 +152,14 @@ else:
 	logger.info("Migrations table exists")
 
 migrations_list = []
-# Nolasa faila vardus
+# Reading all migration file names into an array
 cur_dir = os. getcwd()
 migrations_files_list = os.listdir(cur_dir + "/migrations/")
 for f_name in migrations_files_list:
 	if f_name.endswith('.sql'):
 		migrations_list.append(f_name)
 
-# Savieto seciba
+# Sorting list to be processed in the correct order
 migrations_list.sort(reverse=False)
 
 counter = 0
