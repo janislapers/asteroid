@@ -4,9 +4,9 @@ api_url = https://api.nasa.gov/neo/
 
 [mysql_config]
 mysql_host = 127.0.0.1
-mysql_db = asteroids_p40
-mysql_user = asteroids_user_p40
-mysql_pass = mysuperpassword_p40
+mysql_db = asteroids_p1
+mysql_user = asteroids_user_p1
+mysql_pass = mysuperpassword_p1
 
 [twitter]
 consumer_key = asd
