@@ -8,7 +8,7 @@ formatters:
 handlers:
   file:
     class: logging.handlers.TimedRotatingFileHandler
-    level: DEBUG
+    level: INFO
     formatter: complex
     filename: log/worker.log
     when: 'midnight'
